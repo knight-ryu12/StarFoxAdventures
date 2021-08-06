@@ -110,17 +110,17 @@ void menuDebugRenderRNG_select(const MenuItem *self, int amount) {
 
 
 Menu menuDebugRender = {
-    "Render", 0,
+    "レンダー", 0,
     genericMenu_run, genericMenu_draw, debugSubMenu_close,
-    "Effects",            genericMenuItem_draw,             menuDebugRenderEffects_select,
-    "View Textures",      genericMenuItem_draw,             menuDebugRenderTextures_select,
-    "Map Grid: %s",       menuDebugRenderMapGrid_draw,      menuDebugRenderMapGrid_select,
-    "Perf Meters: %s",    menuDebugRenderPerf_draw,         menuDebugRenderPerf_select,
+    "エフェクト",            genericMenuItem_draw,             menuDebugRenderEffects_select,
+    "テクスチャ表示",      genericMenuItem_draw,             menuDebugRenderTextures_select,
+    "マップグリッド: %s",       menuDebugRenderMapGrid_draw,      menuDebugRenderMapGrid_select,
+    "パフォーマンスメーター: %s",    menuDebugRenderPerf_draw,         menuDebugRenderPerf_select,
     "RNG: %s",            menuDebugRenderRNG_draw,          menuDebugRenderRNG_select,
-    "Debug Objects: %s",  menuDebugRenderDebugObjs_draw,    menuDebugRenderDebugObjs_select,
-    "Hitboxes: %s",       menuDebugRenderHitboxes_draw,     menuDebugRenderHitboxes_select,
-    "Attach Points: %s",  menuDebugRenderAttachPoints_draw, menuDebugRenderAttachPoints_select,
-    "Focus Points: %s",   menuDebugRenderFocusPoints_draw,  menuDebugRenderFocusPoints_select,
-    "Unknown Points: %s", menuDebugRenderUnkPoints_draw,    menuDebugRenderUnkPoints_select,
+    "デバックオブジェクト: %s",  menuDebugRenderDebugObjs_draw,    menuDebugRenderDebugObjs_select,
+    "ヒットボックス: %s",       menuDebugRenderHitboxes_draw,     menuDebugRenderHitboxes_select,
+    "アタッチポイント: %s",  menuDebugRenderAttachPoints_draw, menuDebugRenderAttachPoints_select,
+    "フォーカスポイント: %s",   menuDebugRenderFocusPoints_draw,  menuDebugRenderFocusPoints_select,
+    "不明なポイント: %s", menuDebugRenderUnkPoints_draw,    menuDebugRenderUnkPoints_select,
     NULL,
 };

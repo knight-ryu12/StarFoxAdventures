@@ -368,7 +368,7 @@ void objMenu_run(Menu *self) {
 }
 
 Menu menuDebugObjList = {
-    "Objects", 0,
+    "オブジェクト", 0,
     objMenu_run, objMenu_draw, debugMapSubMenu_close,
     NULL,
 };

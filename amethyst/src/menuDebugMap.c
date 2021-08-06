@@ -86,18 +86,18 @@ void menuDebugMapEnv_select(const MenuItem *self, int amount) {
 }
 
 Menu menuDebugMap = {
-    "Map", 0,
+    "マップ", 0,
     genericMenu_run, genericMenu_draw, debugSubMenu_close,
-    "Warp",                genericMenuItem_draw, menuDebugMapWarp_select,
-    "Objects",             genericMenuItem_draw, menuDebugMapObjs_select,
-    "Spawn Object",        genericMenuItem_draw, menuDebugMapSpawnObj_select,
-    "Reload Map",          genericMenuItem_draw, menuDebugMapReload_select,
-    "Set Restart Point",   genericMenuItem_draw, menuDebugMapSetRestart_select,
-    "Clear Restart Point", genericMenuItem_draw, menuDebugMapClearRestart_select,
-    "Goto Restart Point",  genericMenuItem_draw, menuDebugMapGotoRestart_select,
-    "Set Saved Pos",       genericMenuItem_draw, menuDebugMapSetSavePos_select,
-    "Goto Last Save",      genericMenuItem_draw, menuDebugMapGotoSave_select,
-    "Map States",          genericMenuItem_draw, menuDebugMapStates_select,
-    "Environment",         genericMenuItem_draw, menuDebugMapEnv_select,
+    "ワープ",                genericMenuItem_draw, menuDebugMapWarp_select,
+    "オブジェクト",             genericMenuItem_draw, menuDebugMapObjs_select,
+    "オブジェクト召喚",        genericMenuItem_draw, menuDebugMapSpawnObj_select,
+    "マップリロード",          genericMenuItem_draw, menuDebugMapReload_select,
+    "リスタートポイント設定",   genericMenuItem_draw, menuDebugMapSetRestart_select,
+    "リスタートポイント解除", genericMenuItem_draw, menuDebugMapClearRestart_select,
+    "リスタートポイントに移動",  genericMenuItem_draw, menuDebugMapGotoRestart_select,
+    "セーブポジション設定",       genericMenuItem_draw, menuDebugMapSetSavePos_select,　// Saved means that actually "saved?"
+    "最後にセーブした場所に移動",      genericMenuItem_draw, menuDebugMapGotoSave_select,
+    "マップの状態",          genericMenuItem_draw, menuDebugMapStates_select,
+    "環境",         genericMenuItem_draw, menuDebugMapEnv_select,
     NULL,
 };

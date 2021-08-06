@@ -145,17 +145,16 @@ void menuStopSounds_select(const MenuItem *self, int amount) {
     //XXX music
 }
 
-
 Menu menuAudioSettings = {
-    "Audio Settings", 0,
+    "オーディオ設定", 0,
     genericMenu_run, genericMenu_draw, mainSubMenu_close,
-    "Music Volume: %d%%",    menuMusicVol_draw,    menuMusicVol_select,
-    "SFX Volume: %d%%",      menuSfxVol_draw,      menuSfxVol_select,
-    "CutScene Volume: %d%%", menuSceneVol_draw,    menuSceneVol_select,
-    "Sound Mode: %s",        menuSoundMode_draw,   menuSoundMode_select,
-    "Play Song: %02X %s",    menuMusicTest_draw,   menuMusicTest_select,
-    "Play SFX: %04X",        menuSfxTest_draw,     menuSfxTest_select,
-    "Play Stream: %02X %s",  menuStreamTest_draw,  menuStreamTest_select,
-    "Stop All Sounds",       genericMenuItem_draw, menuStopSounds_select,
+    "曲音量: %d%%",    menuMusicVol_draw,    menuMusicVol_select,
+    "SFX音量: %d%%",      menuSfxVol_draw,      menuSfxVol_select,
+    "カットシーン音量: %d%%", menuSceneVol_draw,    menuSceneVol_select,
+    "サウンド音量: %s",        menuSoundMode_draw,   menuSoundMode_select,
+    "曲再生: %02X %s",    menuMusicTest_draw,   menuMusicTest_select,
+    "SE再生: %04X",        menuSfxTest_draw,     menuSfxTest_select,
+    "ストリーム音源再生: %02X %s",  menuStreamTest_draw,  menuStreamTest_select,
+    "曲を全停止",       genericMenuItem_draw, menuStopSounds_select,
     NULL,
 };

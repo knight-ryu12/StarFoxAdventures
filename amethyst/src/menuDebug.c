@@ -74,3 +74,18 @@ Menu menuDebug = {
     "Misc",           genericMenuItem_draw,   menuDebugMisc_select,
     NULL,
 };
+
+
+Menu menuDebug = {
+    "デバッグ", 0,
+    genericMenu_run, genericMenu_draw, mainSubMenu_close,
+    "フリームーブ: %s",  menuDebugFreeMove_draw, menuDebugFreeMove_select,
+    "デバックテキスト",     genericMenuItem_draw,   menuDebugText_select,
+    "マップ",            genericMenuItem_draw,   menuDebugMap_select,
+    "カメラ",         genericMenuItem_draw,   menuDebugCam_select,
+    "ゲームステート",     genericMenuItem_draw,   menuDebugGame_select,
+    "チート",         genericMenuItem_draw,   menuDebugCheat_select,
+    "レンダリング",         genericMenuItem_draw,   menuDebugRender_select,
+    "その他",           genericMenuItem_draw,   menuDebugMisc_select,
+    NULL,
+};

@@ -132,17 +132,17 @@ void menuDebugRenderColScale_select(const MenuItem *self, int amount) {
 }
 
 Menu menuDebugRenderEffects = {
-    "Effects", 0,
+    "エフェクト", 0,
     genericMenu_run, genericMenu_draw, debugRenderSubMenu_close,
-    "Blur Filter: %s",   menuDebugRenderEffectsBlur_draw,     menuDebugRenderEffectsBlur_select,
-    "Motion Blur: %d",   menuDebugRenderEffectsMotBlur_draw,  menuDebugRenderEffectsMotBlur_select,
-    "Heat Effect: %d",   menuDebugRenderEffectsHeatFx_draw,   menuDebugRenderEffectsHeatFx_select,
-    "Monochrome: %s",    menuDebugRenderEffectsMono_draw,     menuDebugRenderEffectsMono_select,
-    "Spirit Vision: %s", menuDebugRenderEffectsSpirit_draw,   menuDebugRenderEffectsSpirit_select,
-    "Color Filter: %s",  menuDebugRenderColFiltOn_draw,       menuDebugRenderColFiltOn_select,
-    "Filter R: %d",      menuDebugRenderColFiltR_draw,        menuDebugRenderColFiltR_select,
-    "Filter G: %d",      menuDebugRenderColFiltG_draw,        menuDebugRenderColFiltG_select,
-    "Filter B: %d",      menuDebugRenderColFiltB_draw,        menuDebugRenderColFiltB_select,
+    "ブラーフィルター: %s",   menuDebugRenderEffectsBlur_draw,     menuDebugRenderEffectsBlur_select,
+    "モーションブラー: %d",   menuDebugRenderEffectsMotBlur_draw,  menuDebugRenderEffectsMotBlur_select,
+    "熱表現: %d",   menuDebugRenderEffectsHeatFx_draw,   menuDebugRenderEffectsHeatFx_select,
+    "モノクロ: %s",    menuDebugRenderEffectsMono_draw,     menuDebugRenderEffectsMono_select,
+    "魂エフェクト: %s", menuDebugRenderEffectsSpirit_draw,   menuDebugRenderEffectsSpirit_select,
+    "カラーフィルター: %s",  menuDebugRenderColFiltOn_draw,       menuDebugRenderColFiltOn_select,
+    "フィルター R: %d",      menuDebugRenderColFiltR_draw,        menuDebugRenderColFiltR_select,
+    "フィルター G: %d",      menuDebugRenderColFiltG_draw,        menuDebugRenderColFiltG_select,
+    "フィルター B: %d",      menuDebugRenderColFiltB_draw,        menuDebugRenderColFiltB_select,
     "",                  menuDebugRenderColScale_draw,        menuDebugRenderColScale_select,
     NULL,
 };

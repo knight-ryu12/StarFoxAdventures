@@ -488,13 +488,13 @@ void spawnMenu_run(Menu *self) {
 }
 
 Menu menuDebugSpawnObjList = {
-    "Objects", 0,
+    "オブジェクト", 0,
     spawnList_run, spawnList_draw, spawnList_close,
     NULL,
 };
 
 Menu menuDebugSpawnObj = {
-    "Spawn Object", 0,
+    "オブジェクト召喚", 0,
     spawnMenu_run, spawnMenu_draw, debugMapSubMenu_close,
     NULL,
 };

@@ -128,14 +128,14 @@ void menuDebugCheatUnlock_select(const MenuItem *self, int amount) {
 
 
 Menu menuDebugCheat = {
-    "Cheats", 0,
+    "チート", 0,
     genericMenu_run, genericMenu_draw, debugSubMenu_close,
-    "Infinite HP: %s",    menuDebugCheatHP_draw, menuDebugCheatHP_select,
-    "Infinite MP: %s",    menuDebugCheatMP_draw, menuDebugCheatMP_select,
-    "Infinite Money: %s", menuDebugCheatMoney_draw, menuDebugCheatMoney_select,
-    "Infinite Lives: %s", menuDebugCheatLives_draw, menuDebugCheatLives_select,
-    "Infinite Tricky Energy: %s", menuDebugCheatTricky_draw, menuDebugCheatTricky_select,
+    "HP無限: %s",    menuDebugCheatHP_draw, menuDebugCheatHP_select,
+    "MP無限: %s",    menuDebugCheatMP_draw, menuDebugCheatMP_select,
+    "お金無限: %s", menuDebugCheatMoney_draw, menuDebugCheatMoney_select,
+    "ライフ無限: %s", menuDebugCheatLives_draw, menuDebugCheatLives_select,
+    "トリッキーエナジー無限: %s", menuDebugCheatTricky_draw, menuDebugCheatTricky_select,
     "Frozen Baddies: %s", menuDebugCheatFrozen_draw, menuDebugCheatFrozen_select,
-    "Unlock Everything", genericMenuItem_draw, menuDebugCheatUnlock_select,
+    "すべてアンロック", genericMenuItem_draw, menuDebugCheatUnlock_select,
     NULL,
 };

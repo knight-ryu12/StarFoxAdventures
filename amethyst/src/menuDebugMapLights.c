@@ -140,7 +140,7 @@ void lightMenu_close(const Menu *self) {
 }
 
 Menu menuDebugMapEnvLights = {
-    "Lights", 0,
+    "ライト", 0,
     lightMenu_run, lightMenu_draw, lightMenu_close,
     NULL,
 };

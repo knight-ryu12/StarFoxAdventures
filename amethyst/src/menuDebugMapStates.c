@@ -315,7 +315,7 @@ void mapStatesMenu_run(Menu *self) {
 
 
 Menu menuDebugMapStates = {
-    "Map States", 0,
+    "マップの状態", 0,
     mapStatesMenu_run, mapStatesMenu_draw, debugMapSubMenu_close,
     //"Time: %02d:%02d:%02d", menuDebugMapEnvTime_draw, menuDebugMapEnvTime_select,
     NULL,

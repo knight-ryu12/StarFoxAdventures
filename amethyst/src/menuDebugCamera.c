@@ -17,7 +17,7 @@ void menuDebugCamMode_select(const MenuItem *self, int amount) {
 
 
 Menu menuDebugCamera = {
-    "Camera", 0, genericMenu_run, genericMenu_draw, debugSubMenu_close,
-    "Mode: %s", menuDebugCamMode_draw, menuDebugCamMode_select,
+    "カメラ", 0, genericMenu_run, genericMenu_draw, debugSubMenu_close,
+    "モード: %s", menuDebugCamMode_draw, menuDebugCamMode_select,
     NULL,
 };

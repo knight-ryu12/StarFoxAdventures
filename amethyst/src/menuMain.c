@@ -62,14 +62,14 @@ void menuMainDebug_select(const MenuItem *self, int amount) {
 }
 
 Menu menuMain = {
-    "PDA Menu", 0,
+    "PDAメニュー", 0,
     genericMenu_run, genericMenu_draw, mainMenu_close,
-    "Game Settings",    genericMenuItem_draw, menuMainGameSettings_select,
-    "Control Settings", genericMenuItem_draw, menuMainControlSettings_select,
-    "Player Settings",  genericMenuItem_draw, menuMainPlayerSettings_select,
-    "Video Settings",   genericMenuItem_draw, menuMainVideoSettings_select,
-    "Audio Settings",   genericMenuItem_draw, menuMainAudioSettings_select,
-    "PDA Settings",     genericMenuItem_draw, menuMainPdaSettings_select,
-    "Debug",            genericMenuItem_draw, menuMainDebug_select,
+    "ゲーム設定",    genericMenuItem_draw, menuMainGameSettings_select,
+    "コントロール設定", genericMenuItem_draw, menuMainControlSettings_select,
+    "プレイヤー設定",  genericMenuItem_draw, menuMainPlayerSettings_select,
+    "ビデオ設定",   genericMenuItem_draw, menuMainVideoSettings_select,
+    "オーディオ設定",   genericMenuItem_draw, menuMainAudioSettings_select,
+    "PDA設定",     genericMenuItem_draw, menuMainPdaSettings_select,
+    "デバッグ",            genericMenuItem_draw, menuMainDebug_select,
     NULL,
 };

@@ -167,7 +167,7 @@ void hexEdit_run(Menu *self) {
 }
 
 Menu menuDebugHexEdit = {
-    "Edit Memory", 0,
+    "メモリエディット", 0,
     hexEdit_run, hexEdit_draw, hexEdit_close,
     NULL,
 };

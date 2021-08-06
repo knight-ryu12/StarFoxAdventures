@@ -124,16 +124,16 @@ void menuEditPlayerFood_select(const MenuItem *self, int amount) {
 
 
 Menu menuDebugEditPlayer = {
-    "Edit Player State", 0,
+    "プレイヤー状態の編集", 0,
     genericMenu_run, genericMenu_draw, debugGameSubMenu_close,
-    "Edit: %s",   menuEditPlayerWhich_draw, menuEditPlayerWhich_select,
+    "編集: %s",   menuEditPlayerWhich_draw, menuEditPlayerWhich_select,
     "Cur HP: %d", menuEditPlayerCurHp_draw, menuEditPlayerCurHp_select,
     "Max HP: %d", menuEditPlayerMaxHp_draw, menuEditPlayerMaxHp_select,
     "Cur MP: %d", menuEditPlayerCurMp_draw, menuEditPlayerCurMp_select,
     "Max MP: %d", menuEditPlayerMaxMp_draw, menuEditPlayerMaxMp_select,
     "Cur Lives: %d", menuEditPlayerCurLives_draw, menuEditPlayerCurLives_select,
     "Max Lives: %d", menuEditPlayerMaxLives_draw, menuEditPlayerMaxLives_select,
-    "Money: %d", menuEditPlayerMoney_draw, menuEditPlayerMoney_select,
-    "Tricky Food: %d", menuEditPlayerFood_draw, menuEditPlayerFood_select,
+    "お金: %d", menuEditPlayerMoney_draw, menuEditPlayerMoney_select,
+    "トリッキーのご飯: %d", menuEditPlayerFood_draw, menuEditPlayerFood_select,
     NULL,
 };

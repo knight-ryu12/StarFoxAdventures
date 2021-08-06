@@ -131,7 +131,7 @@ void textureMenu_run(Menu *self) {
 }
 
 Menu menuDebugTextureView = {
-    "View Textures", 0,
+    "テクスチャ表示", 0,
     textureMenu_run, textureMenu_draw, debugRenderSubMenu_close,
     NULL,
 };

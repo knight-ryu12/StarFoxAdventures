@@ -352,7 +352,7 @@ void warpMenu_run(Menu *self) {
 }
 
 Menu menuDebugWarp = {
-    "Warp", 0,
+    "ワープ", 0,
     warpMenu_run, warpMenu_draw, debugMapSubMenu_close,
     NULL,
 };

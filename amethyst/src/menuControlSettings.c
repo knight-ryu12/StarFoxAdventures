@@ -63,7 +63,7 @@ void menuCamInvY_select(const MenuItem *self, int amount) {
 }
 
 
-Menu menuControlSettings = {
+/*Menu menuControlSettings = {
     "Control Settings", 0,
     genericMenu_run, genericMenu_draw, mainSubMenu_close,
     "Rumble: %s",                    menuRumble_draw,     menuRumble_select,
@@ -71,5 +71,16 @@ Menu menuControlSettings = {
     "Camera Control: Controller %d", menuCamCtrl_draw,    menuCamCtrl_select,
     "Camera X: %s",                  menuCamInvX_draw,    menuCamInvX_select,
     "Camera Y: %s",                  menuCamInvY_draw,    menuCamInvY_select,
+    NULL,
+};*/
+
+Menu menuControlSettings = {
+    "コントロール設定", 0,
+    genericMenu_run, genericMenu_draw, mainSubMenu_close,
+    "振動: %s",                    menuRumble_draw,     menuRumble_select,
+    "振動ブラー: %s",               menuRumbleBlur_draw, menuRumbleBlur_select,
+    "カメラコントロール: コントローラー %d", menuCamCtrl_draw,    menuCamCtrl_select,
+    "カメラ X: %s",                  menuCamInvX_draw,    menuCamInvX_select,
+    "カメラ Y: %s",                  menuCamInvY_draw,    menuCamInvY_select,
     NULL,
 };

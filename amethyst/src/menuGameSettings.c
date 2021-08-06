@@ -82,13 +82,13 @@ void menuHpSound_select(const MenuItem *self, int amount) {
 }
 
 Menu menuGameSettings = {
-    "Game Settings", 0,
+    "ゲーム設定", 0,
     genericMenu_run, genericMenu_draw, mainSubMenu_close,
-    "Game Speed: %d%%", menuGameSpeed_draw, menuGameSpeed_select,
-    "Autosave: %s",     menuAutoSave_draw,  menuAutoSave_select,
-    "Subtitles: %s",    menuSubtitles_draw, menuSubtitles_select,
-    "Language: %s",     menuLanguage_draw,  menuLanguage_select,
-    "Low HP Flash: %s", menuHpFlash_draw,   menuHpFlash_select,
-    "Low HP Sound: %s", menuHpSound_draw,   menuHpSound_select,
+    "ゲーム速度: %d%%", menuGameSpeed_draw, menuGameSpeed_select,
+    "オートセーブ: %s",     menuAutoSave_draw,  menuAutoSave_select,
+    "サブタイトル: %s",    menuSubtitles_draw, menuSubtitles_select,
+    "言語: %s",     menuLanguage_draw,  menuLanguage_select,
+    "HP低下 フラッシュ: %s", menuHpFlash_draw,   menuHpFlash_select,
+    "HP低下 音: %s", menuHpSound_draw,   menuHpSound_select,
     NULL,
 };

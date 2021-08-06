@@ -24,9 +24,9 @@ void menuDebugGameStatePlayer_select(const MenuItem *self, int amount) {
 }
 
 Menu menuDebugGameState = {
-    "Game State", 0,
+    "ゲームステート", 0,
     genericMenu_run, genericMenu_draw, debugSubMenu_close,
     "GameBits",      genericMenuItem_draw, menuDebugGameStateBits_select,
-    "Edit Player State", genericMenuItem_draw, menuDebugGameStatePlayer_select,
+    "プレイヤーの状態を編集", genericMenuItem_draw, menuDebugGameStatePlayer_select,
     NULL,
 };

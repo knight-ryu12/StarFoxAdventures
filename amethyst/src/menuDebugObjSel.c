@@ -153,20 +153,20 @@ void menuObjSelCallSeq_select(const MenuItem *self, int amount) {
 }
 
 Menu menuDebugObjSelected = {
-    "", 0,
+    "", 0, // Empty is fine?
     genericMenu_run, objSelMenu_draw, objListSubmenu_close,
-    "Set Camera Focus",   genericMenuItem_draw, menuObjSelFocus_select,
-    "Go To",              genericMenuItem_draw, menuObjSelMovePlayer_select,
-    "Bring To Player",    genericMenuItem_draw, menuObjSelSummon_select,
-    "Delete",             genericMenuItem_draw, menuObjSelDelete_select,
-    "Edit",               genericMenuItem_draw, menuObjSelEditObj_select,
-    "Edit ObjDef",        genericMenuItem_draw, menuObjSelEditDef_select,
-    "Edit File",          genericMenuItem_draw, menuObjSelEditFile_select,
-    "Edit State",         genericMenuItem_draw, menuObjSelEditState_select,
-    "Run Seq %d: %04X",   menuObjSelCallSeq_draw, menuObjSelCallSeq_select,
+    "カメラフォーカス設定",   genericMenuItem_draw, menuObjSelFocus_select,
+    "移動",              genericMenuItem_draw, menuObjSelMovePlayer_select,
+    "プレイヤーに向けて移動",    genericMenuItem_draw, menuObjSelSummon_select,
+    "削除",             genericMenuItem_draw, menuObjSelDelete_select,
+    "編集",               genericMenuItem_draw, menuObjSelEditObj_select,
+    "オブジェクト定義を編集",        genericMenuItem_draw, menuObjSelEditDef_select,
+    "ファイル編集",          genericMenuItem_draw, menuObjSelEditFile_select,
+    "状態編集",         genericMenuItem_draw, menuObjSelEditState_select,
+    "シーケンス%d実行: %04X",   menuObjSelCallSeq_draw, menuObjSelCallSeq_select,
     //these will probably crash, so add a little warning icon
-    "[!] Set as Player",  genericMenuItem_draw, menuObjSelSetPlayer_select,
-    "[!] Ride",           genericMenuItem_draw, menuObjSelRide_select,
-    "[!] Hold",           genericMenuItem_draw, menuObjSelHold_select,
+    "[!] プレイヤーとして設定",  genericMenuItem_draw, menuObjSelSetPlayer_select,
+    "[!] 乗る",           genericMenuItem_draw, menuObjSelRide_select,
+    "[!] 持つ",           genericMenuItem_draw, menuObjSelHold_select,
     NULL,
 };
