@@ -117,7 +117,7 @@ void saveUpdateHook() {
     if(autoSaveMsgTimer) {
         autoSaveMsgTimer--;
         gameTextSetColor(0xFF, 0xFF, 0xFF, 0xFF);
-        gameTextShowStr("Saving...", 0x0A, 0, 0);
+        gameTextShowStr("保存中...", 0x0A, 0, 0);
     }
 }
 

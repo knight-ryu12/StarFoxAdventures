@@ -6,7 +6,7 @@ void worldMapHook() {
 
     //pad with spaces to center
     //we can't actually set the X offset with this window type
-    gameTextShowStr("Z: Skip   ", 2, 0, 352);
+    gameTextShowStr("Z: スキップ   ", 2, 0, 352);
 
     if(!(buttonsJustPressed == PAD_TRIGGER_Z)) return;
 
